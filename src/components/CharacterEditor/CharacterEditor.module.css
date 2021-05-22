@@ -27,13 +27,21 @@
 }
 
 .controlColumn {
-  width: 50%;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .controlColumn {
+    width: 50%;
+    display: block;
+  }
 }
 
 .characterWrapper {
   position: fixed;
   top: 20%;
   right: 15%;
+  z-index: -1;
 }
 
 .perspectiveDecoration {

@@ -26,13 +26,19 @@
 
 .controlColumn {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(6, 350px);
+  align-items: flex-end;
+  height: 80vh;
+  column-gap: 25px;
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
 @media (min-width: 768px) {
   .controlColumn {
     width: 50%;
     display: block;
+    height: auto;
   }
 }
 
@@ -42,7 +48,7 @@
   right: 10%;
   bottom: 5%;
   z-index: -1;
-  min-height: 500px;
+  height: 500px;
 }
 
 .perspectiveDecoration {

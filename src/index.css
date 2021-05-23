@@ -4,6 +4,13 @@ body,
   height: 100%;
 }
 
+@media (max-width: 768px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+
 body {
   background-color: hsl(180deg, 25%, 92%);
   margin: 0;

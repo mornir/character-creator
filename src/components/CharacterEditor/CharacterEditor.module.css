@@ -8,8 +8,17 @@
 }
 
 .header {
-  padding-bottom: 64px;
-  width: 65%;
+  padding: 25px;
+  background: hsla(0, 0%, 100%, 0.9);
+}
+
+@media (min-width: 768px) {
+  .header {
+    width: 65%;
+    padding: 0;
+    padding-bottom: 64px;
+    background: transparent;
+  }
 }
 
 .title {
@@ -26,6 +35,8 @@
 }
 
 .controlColumn {
+  margin-left: -32px;
+  margin-right: -32px;
   display: grid;
   grid-template-columns: repeat(6, 350px);
   align-items: flex-end;
@@ -37,6 +48,7 @@
 
 @media (min-width: 768px) {
   .controlColumn {
+    margin: 0;
     width: 50%;
     display: block;
     height: auto;
@@ -45,17 +57,23 @@
 
 .characterWrapper {
   position: fixed;
-  top: 15%;
-  right: 10%;
-  bottom: 5%;
-  height: 500px;
+  margin: auto;
+  min-height: 500px;
+}
+
+@media (min-width: 768px) {
+  .characterWrapper {
+    margin: 0;
+    top: 15%;
+    right: 5%;
+    bottom: 5%;
+  }
 }
 
 .perspectiveDecoration {
   position: fixed;
-  right: 0;
-  left: 0;
   bottom: 0;
   height: 40%;
+  width: 100%;
   background-color: hsl(195deg, 20%, 86%);
 }
